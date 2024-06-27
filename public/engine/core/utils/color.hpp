@@ -6,10 +6,6 @@
 
 namespace engine::core::utils {
 #pragma pack(push, 1)
-    struct RGBColor {
-        uint8_t r, g, b;
-    };
-
 	/// <summary>
 	/// Stores a quad-dimensional packed point(RGBA color) of the specified type.
 	/// </summary>
@@ -197,9 +193,9 @@ namespace engine::core::utils {
 			return *this;
 		}
 	};
-#pragma pack(pop)
 
 	using Color = RGBAColor<uint8_t>;
+#pragma pack(pop)
 
 	namespace colors {
 		static Color black(0, 0, 0);
